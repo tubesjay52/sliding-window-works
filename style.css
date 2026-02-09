@@ -1,0 +1,217 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e3b4e;
+    padding: 15px 25px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ROUND LOGO */
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* NAV */
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.founder {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* COMPANY DETAILS */
+.company-details {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.company-details p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* DESIGN GALLERY */
+
+/*  OUR WINDOW DESIGN*/
+.our-window-design {
+    text-align: center;
+}
+.design-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.design-card {
+    width: 260px;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+/* IMAGE */
+.design-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* DESCRIPTION (HIDDEN BY DEFAULT) */
+.design-info {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.design-card:hover img {
+    transform: scale(1.15);
+}
+
+.design-card:hover .design-info {
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 15px;
+}
+
+/* TEXT STYLE */
+.design-info p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2e3b4e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* CONTACT ICONS CONTAINER */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* EACH CONTACT */
+.contact-item {
+    position: relative;
+    cursor: pointer;
+}
+
+/* CONTACT ICONS CONTAINER */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Equal spacing */
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+/* EACH CONTACT ITEM */
+.contact-item {
+    width: 120px; /* Makes all items same width */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ICON STYLE (FORCE SAME SIZE) */
+.contact-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.contact-item:hover img {
+    transform: scale(1.15);
+}
+
+/* CONTACT TEXT */
+.contact-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* SHOW TEXT ON HOVER */
+.contact-item:hover p {
+    opacity: 1;
+}
+
+
+/* HOVER ZOOM */
+.contact-item:hover img {
+    transform: scale(1.2);
+}
+
+/* CONTACT TEXT (HIDDEN DEFAULT) */
+.contact-item p {
+    margin-top: 10px;
+    font-size: 14px;
+
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* SHOW TEXT ON HOVER */
+.contact-item:hover p {
+    opacity: 1;
+}
+
+/* COPYRIGHT */
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: 0.8;
+}
